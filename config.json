@@ -1,0 +1,38 @@
+{
+  "poll_interval": 2,
+
+  "process_alerts": {
+    "cpu_percent": 80,
+    "memory_percent": 70
+  },
+
+  "host_alerts": {
+    "cpu_percent": 90,
+    "memory_percent": 85
+  },
+
+  "vm_alerts": {
+    "cpu_percent": 80,
+    "memory_percent": 75,
+    "cpu_time_delta_ns": 5000000000
+  },
+
+  "alert_throttle_seconds": 60,
+
+  "email": {
+    "enabled": false,
+    "smtp_server": "smtp.example.com",
+    "smtp_port": 587,
+    "username": "your@example.com",
+    "password": "yourpassword",
+    "from": "cpu-buddy@example.com",
+    "to": ["admin@example.com"]
+  },
+
+  "use_hypervisor": true,
+
+  "hypervisor": {
+    "uri": "qemu:///system",
+    "poll_interval": 2
+  }
+}
